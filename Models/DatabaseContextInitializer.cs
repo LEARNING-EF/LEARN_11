@@ -1,7 +1,4 @@
-﻿//using System.Linq;
-//using System.Data.Entity;
-
-namespace Models
+﻿namespace Models
 {
 	internal class DatabaseContextInitializer :
 		System.Data.Entity.DropCreateDatabaseIfModelChanges<DatabaseContext>
@@ -41,7 +38,7 @@ namespace Models
 			databaseContext.People.Add(person);
 
 			person = new Person();
-			person.FullName.FirstName = "     Ali     ";
+			person.FullName.FirstName = "     Mohammad     ";
 			databaseContext.People.Add(person);
 
 			person = new Person();
