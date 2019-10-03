@@ -23,8 +23,8 @@ namespace LEARNING_EF_CODE_FIRST
 					.ToList()
 					;
 
-				peopleListBox.ValueMember = "Id";
-				peopleListBox.DisplayMember = "DisplayFullName";
+				peopleListBox.ValueMember = nameof(Models.Person.Id);
+				peopleListBox.DisplayMember = nameof(Models.Person.DisplayFullName);
 
 				peopleListBox.DataSource = people;
 			}
@@ -37,7 +37,7 @@ namespace LEARNING_EF_CODE_FIRST
 				if (databaseContext != null)
 				{
 					databaseContext.Dispose();
-					databaseContext = null;
+					//databaseContext = null;
 				}
 			}
 		}
