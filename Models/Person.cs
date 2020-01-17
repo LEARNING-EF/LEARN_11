@@ -6,7 +6,8 @@
 		{
 			Id = System.Guid.NewGuid();
 
-			FullName = new ComplexTypes.FullName();
+			FullName =
+				new ComplexTypes.FullName();
 		}
 
 		// **********
