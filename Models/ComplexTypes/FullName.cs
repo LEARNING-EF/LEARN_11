@@ -19,6 +19,7 @@
 		public string LastName { get; set; }
 		// **********
 
+		// **********
 		public override string ToString()
 		{
 			string result = string.Empty;
@@ -42,5 +43,6 @@
 
 			return result;
 		}
+		// **********
 	}
 }
